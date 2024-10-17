@@ -23,7 +23,7 @@ namespace HataFirlatma
 
         private static void Application_ThreadException(object sender, ThreadExceptionEventArgs e)
         {
-            System.IO.File.AppendAllText("D:\\HataOku.txt",
+            System.IO.File.AppendAllText("D:\\HataOku.txt", //C sürücüsüne dosya oluşturmasında hata çıkabilir bu sebeple D sürücüsünü seçtim
                 e.Exception.Message + " " +
                 e.Exception.Source + " " +
                 e.Exception.StackTrace + " " +
